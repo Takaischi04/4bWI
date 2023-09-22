@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+}
+
+.blueBox {
+    height: 300px;
+    width: 400px;
+    background-color: lightblue;
+    border: 1px black solid;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    padding:20px;
+}
+
+.purpleBox {
+    height: 50px;
+    width: 50px;
+    background-color: plum;
+    border: 1px solid black;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.orangeBox {
+    height: 100px;
+    width: 100px;
+    background-color: lightsalmon;
+    border: 1px solid black;
+    position: relative;
+    margin-left: 100px;
+}
+
+.yellowLine {
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+    border: 1px solid black;
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.greenBox {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
