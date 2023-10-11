@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    margin: 0px;
+    display: flex;
+}
+
+.teams {
+    height: 780px;
+    width: 450px;
+    background-color: #373737;
+    margin: 5px;
+    position: relative;
+    overflow:auto;
+}
+
+.teams::-webkit-scrollbar {
+    width: 15px;
+    background-color: #3E3E3E;
+}
+
+.teams::-webkit-scrollbar-thumb {
+    background-color: #7E7E7E;
+    border-radius: 5px;
+}
+
+.teams::-webkit-scrollbar-thumb:hover{
+    background-color: #949494;
+
+}
+
+.content {
+    height: 750px;
+    width: 970px;
+    border: solid 1px white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.darkerBack {
+    background-color: #373737;
+    width: 435px;
+    height: 100px;
+}
+
+.lighterBack {
+    background-color: #262626;
+    width: 435px;
+    height: 100px;
+}
