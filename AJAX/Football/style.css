@@ -5,7 +5,7 @@ body {
 }
 
 .teams {
-    height: 780px;
+    height: 765px;
     width: 450px;
     background-color: #373737;
     margin: 4px;
@@ -30,21 +30,25 @@ body {
 
 .content {
     height: 750px;
-    width: 970px;
+    width: 1030px;
     margin-top: 20px;
     margin-left: 20px;
-    background-color: white;
+    padding: 30px;
+    background-color: #141414;
+    font-family: 'Quicksand';
+    color: white;
+    display:flex;
 }
 
 .darkerBack {
     background-color: #373737;
-    width: 435px;
+    width: 433px;
     height: 100px;
 }
 
 .lighterBack {
     background-color: #262626;
-    width: 435px;
+    width: 433px;
     height: 100px;
 }
 
@@ -53,8 +57,24 @@ button {
     cursor: pointer;
     font-size: 35px;
     color: white;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand';
     font-weight: 200;
     text-align: left;
     padding-left: 50px;
+}
+
+.imageSize {
+    height: 250px;
+    width: 250px;
+}
+
+.logoWithName {
+    font-size: 3rem;
+}
+
+.statsback {
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(#00FFE0, #8F00FF);
+    position:relative
 }
