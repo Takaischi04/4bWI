@@ -42,18 +42,27 @@ const buttonClicked = (data, teamID) => {
 
     if (data[teamID]) {
         const dataElementAtTeamID = data[teamID];
-        html += "<div class='logoWithName'>"
+        const dataElementAtTeamID2 = data[teamID +1];
+        html += "<div class='logoWithName'>";
         html +=     "<img class='imageSize' src=" + dataElementAtTeamID.teamIconUrl + ">";
         html +=     "<div>" + dataElementAtTeamID.teamName + "</div>";
-        html += "</div>"
+        html += "</div>";
         
-        html += "<div class='statsback'>"
-        html +=     "<div class='statsfront'>"
-        html +=         "<div class='headerStats'>" + "Stats:" + "</div>"
+        html += "<div class='statsback'>";
+        html +=     "<div class='statsfront'>";
+        html +=         "<div class='headerStats'>" + "Stats:" + "</div>";
         html +=         "<div class='stat'>" + "Matches: " +dataElementAtTeamID.matches + "</div>";
         html +=         "<div class='stat'>" + "Wins: " + dataElementAtTeamID.won + "</div>";
         html +=         "<div class='stat'>" + "Lost: " + dataElementAtTeamID.lost + "</div>";
         html +=         "<div class='stat'>" + "Draw: " + dataElementAtTeamID.draw + "</div>";
+        html +=     "</div>";
+        html += "</div>";
+
+        html += "<div class='nextMatch'>";
+        html +=     "<div class='headerNextMatch'>"+ "Upcoming Matches" + "</div>";
+        html +=         "<div class='nextMatchBox1'>";
+        html +=         "<div class=''>" + dataElementAtTeamID.teamIconUrl + "</div>";
+        html +=         "<div class=''>" + dataElementAtTeamID2.teamIconUrl + "</div>";
         html +=     "</div>";
         html += "</div>";
     }
