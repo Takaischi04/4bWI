@@ -49,10 +49,11 @@ const buttonClicked = (data, teamID) => {
         
         html += "<div class='statsback'>"
         html +=     "<div class='statsfront'>"
-        html +=         "<div>" + "Matches: " +dataElementAtTeamID.matches + "</div>";
-        html +=         "<div>" + "Wins: " + dataElementAtTeamID.won + "</div>";
-        html +=         "<div>" + "Lost: " + dataElementAtTeamID.lost + "</div>";
-        html +=         "<div>" + "Draw: " + dataElementAtTeamID.draw + "</div>";
+        html +=         "<div class='headerStats'>" + "Stats:" + "</div>"
+        html +=         "<div class='stat'>" + "Matches: " +dataElementAtTeamID.matches + "</div>";
+        html +=         "<div class='stat'>" + "Wins: " + dataElementAtTeamID.won + "</div>";
+        html +=         "<div class='stat'>" + "Lost: " + dataElementAtTeamID.lost + "</div>";
+        html +=         "<div class='stat'>" + "Draw: " + dataElementAtTeamID.draw + "</div>";
         html +=     "</div>";
         html += "</div>";
     }

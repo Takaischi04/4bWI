@@ -8,7 +8,7 @@ body {
     height: 765px;
     width: 450px;
     background-color: #373737;
-    margin: 4px;
+    margin: 5px;
     position: relative;
     overflow:auto;
 }
@@ -29,8 +29,8 @@ body {
 }
 
 .content {
-    height: 750px;
-    width: 1030px;
+    height: 680px;
+    width: 980px;
     margin-top: 20px;
     margin-left: 20px;
     padding: 30px;
@@ -38,6 +38,7 @@ body {
     font-family: 'Quicksand';
     color: white;
     display:flex;
+    justify-content: space-between;
 }
 
 .darkerBack {
@@ -76,5 +77,25 @@ button {
     height: 400px;
     width: 400px;
     background: linear-gradient(#00FFE0, #8F00FF);
-    position:relative
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statsfront {
+    height: 395px;
+    width: 395px;
+    background: #141414;
+}
+
+.headerStats {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.stat{
+    font-size: 1.5rem;
+    margin-left: 100px;
+    margin-bottom: 35px;
 }
