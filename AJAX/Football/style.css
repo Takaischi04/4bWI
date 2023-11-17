@@ -99,3 +99,47 @@ button {
     margin-left: 100px;
     margin-bottom: 35px;
 }
+
+.nextMatch {
+    position:fixed;
+    height: 250px;
+    width: 980px;
+    bottom: 35px;
+    display: flex;
+}
+
+.nextMatchBox1Back {
+    background: linear-gradient(#00FFE0, #8F00FF);
+    height: 150px;
+    width: 400px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+}
+
+.nextMatchBoxFront {
+    background: #141414;
+    height: 145px;
+    width: 395px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nextMatchBox2Back {
+    background: linear-gradient(#00FFE0, #8F00FF);
+    height: 150px;
+    width: 400px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+    left: 1000px;
+}
+
+.icon {
+    height: 100px;
+}
