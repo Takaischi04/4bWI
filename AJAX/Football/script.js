@@ -1,5 +1,5 @@
 const loadData = () => {
-    fetch("https://api.openligadb.de/getbltable/öbl1/2023").then((result) => {
+    fetch("https://api.openligadb.de/getbltable/bl1/2023").then((result) => {
         result.json().then((data) => {
             console.log(data);
             fillTable(data);
@@ -8,7 +8,7 @@ const loadData = () => {
 };
 
 const loadDataForContent = (teamID) => {
-    fetch("https://api.openligadb.de/getbltable/öbl1/2023").then((result) => {
+    fetch("https://api.openligadb.de/getbltable/bl1/2023").then((result) => {
         result.json().then((data) => {
             buttonClicked(data, teamID);
         });
