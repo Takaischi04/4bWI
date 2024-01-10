@@ -1,4 +1,5 @@
 import List from './components/com_List.js';
+import Button from './components/com_Button.js';
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
       <List beverage="coffee" />
       <List beverage="Tea" />
       <List beverage="Beer" />
+
+      <h1 className="mt-5">Button</h1>
+      <Button buttonName="Sendar" />
     </div>
   );
 }
