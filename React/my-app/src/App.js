@@ -1,5 +1,6 @@
 import List from './components/com_List.js';
 import Button from './components/com_Button.js';
+import Card from './components/com_Card.js';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Button buttonName="Sendar" />
 
       <h1 className="mt-10 mb-2">Card</h1>
-
+      <Card cardName="John Doe" profession="Architect & Engineer" />
     </div>
   );
 }
