@@ -1,9 +1,10 @@
-
+import List from './components/com_List.js';
 
 
 function App() {
   return (
-    <div>
+    <div className="bg-black w-full h-40">
+      <List />
 
     </div>
   );
