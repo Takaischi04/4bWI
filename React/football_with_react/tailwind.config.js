@@ -14,6 +14,10 @@ module.exports = {
         'listBackgroundDark': '#262626',
         'listBackgroundLight': '#373737',
       },
+
+      fontFamily: {
+        Quicksand: ['Quicksand'],
+      },
     },
   },
   plugins: [],
