@@ -18,11 +18,14 @@ export default function List_component() {
     return (
         <div className="w-80 h-full text-white bg-backgroundList overflow-auto">
             {teams.map((team, index) => (
-                <button
-                    key={index}
-                    className={`w-full h-24 pl-5 cursor-pointer bg-${index % 2 === 0 ? "listBackgroundDark" : "listBackgroundLight"} font-Quicksand text-2xl text-left`}>
-                    {team.teamName}
-                </button>
+                <div className="w-full h-24 hover:bg-gradient-to-b from-accentTurquoise to-accentPurple flex">
+                    <button
+                        key={index}
+                        className={`w-full m-1 pl-5 ${index % 2 === 0 ? "bg-listBackgroundDark" : "bg-listBackgroundLight"} cursor-pointer font-Quicksand text-2xl text-left `}>
+
+                        {team.teamName}
+                    </button>
+                </div>
             ))}
         </div>
     )
