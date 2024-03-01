@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react'
+import { useEffect, useState } from 'react';
 
-export default function List_component() {
+export default function ListButtonMolecule() {
     const [teams, setTeams] = useState([]);
 
     useEffect(() => {
@@ -13,16 +14,13 @@ export default function List_component() {
             );
     }, [])
 
-
-
     return (
-        <div className="w-80 h-full text-white bg-backgroundList overflow-auto">
+        <div>
             {teams.map((team, index) => (
-                <div className="w-full h-24 hover:bg-gradient-to-b from-accentTurquoise to-accentPurple flex">
+                <div className='w-full h-full hover:bg-gradient-to-b from-accentTurquoise to-accentPurple'>
                     <button
                         key={index}
-                        className={`w-full m-1 pl-5 ${index % 2 === 0 ? "bg-listBackgroundDark" : "bg-listBackgroundLight"} cursor-pointer font-Quicksand text-2xl text-left `}>
-
+                        className={`w-widthOfList m-0.5 p-5 ${index % 2 === 0 ? "bg-listBackgroundDark" : "bg-listBackgroundLight"} cursor-pointer font-Quicksand text-2xl text-left`}>
                         {team.teamName}
                     </button>
                 </div>

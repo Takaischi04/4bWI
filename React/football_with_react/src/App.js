@@ -1,10 +1,11 @@
-import List from './components/List_component.js';
+import ListTemplate from './components/templates/ListTemplate.js';
 
-
+//bg-black w-full h-screen
 function App() {
   return (
-    <div className="bg-black w-full h-screen">
-      <List />
+
+    <div className="w-full h-screen bg-black">
+      <ListTemplate />
     </div>
   );
 

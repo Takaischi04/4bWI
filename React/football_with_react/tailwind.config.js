@@ -18,6 +18,10 @@ module.exports = {
       fontFamily: {
         Quicksand: ['Quicksand'],
       },
+
+      width: {
+        widthOfList: '299px',
+      },
     },
   },
   plugins: [],
