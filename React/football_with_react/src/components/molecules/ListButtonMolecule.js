@@ -8,17 +8,21 @@ export default function ListButtonMolecule() {
         fetch("https://api.openligadb.de/getbltable/bl1/2023")
             .then((res) => res.json()
                 .then((data) => {
-                    console.log(data);
                     setTeams(data);
                 })
             );
     }, [])
+
+    const refreshTeamInfo = (index) => {
+        console.log(index);
+    }
 
     return (
         <div>
             {teams.map((team, index) => (
                 <div className='w-full h-full hover:bg-gradient-to-b from-accentTurquoise to-accentPurple'>
                     <button
+                        onClick={() => refreshTeamInfo(index)}
                         key={index}
                         className={`w-widthOfList m-0.5 p-5 ${index % 2 === 0 ? "bg-listBackgroundDark" : "bg-listBackgroundLight"} cursor-pointer font-Quicksand text-2xl text-left`}>
                         {team.teamName}
