@@ -20,7 +20,8 @@ module.exports = {
       },
 
       width: {
-        widthOfList: '299px',
+        widthOfList: '99%',
+        contentWidth: '78%',
       },
     },
   },

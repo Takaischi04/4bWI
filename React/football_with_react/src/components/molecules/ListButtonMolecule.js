@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 
+
 export default function ListButtonMolecule() {
     const [teams, setTeams] = useState([]);
 
@@ -14,7 +15,8 @@ export default function ListButtonMolecule() {
     }, [])
 
     const refreshTeamInfo = (index) => {
-        console.log(index);
+        const neededIndex = index;
+        console.log(neededIndex);
     }
 
     return (

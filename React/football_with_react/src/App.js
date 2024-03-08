@@ -1,14 +1,14 @@
+import React, { useState } from 'react';
 import ListTemplate from './components/templates/ListTemplate.js';
+import Content from './components/templates/ContentTemplate.js';
 
-//bg-black w-full h-screen
 function App() {
   return (
-
-    <div className="w-full h-screen bg-black">
+    <div className="w-full h-screen bg-black flex">
       <ListTemplate />
+      <Content />
     </div>
   );
-
 }
 
 export default App;
