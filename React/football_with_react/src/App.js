@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import ListTemplate from './components/templates/ListTemplate.js';
-import Content from './components/templates/ContentTemplate.js';
+import List from './components/organisms/List_Organism.js';
+import Content from './components/organisms/Content_Organism.js'
 
 function App() {
   return (
-    <div className="w-full h-screen bg-black flex">
-      <ListTemplate />
+    <div className="h-screen w-screen bg-black flex">
+      <List />
       <Content />
     </div>
   );
