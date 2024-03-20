@@ -1,9 +1,6 @@
 import React from 'react';
-import { useSelectedTeam } from './CustomHookAtom.js';
 
 export default function Content_TeamPictureAtom({ image }) {
-
-
   return (
     <div>
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function TeamCard({ index, name, onClick }) {
     return (
-        <div key={index} className='w-full  hover:bg-gradient-to-b from-accentTurquoise to-accentPurple'>
+        <div key={index} className='w-full hover:bg-gradient-to-b from-accentTurquoise to-accentPurple'>
             <button
                 onClick={() => onClick()}
                 key={index}

@@ -1,4 +1,3 @@
-import List from './components/organisms/List_Organism.js';
 import Content from './components/organisms/Content_Organism.js'
 import List_TeamNameAtom from './components/atoms/List_TeamNameAtom.js';
 import { useState } from 'react';
@@ -13,10 +12,7 @@ function App() {
         setTeam(team);
       }} />
       {team ?
-        <Content team={team} /> : <div>Bitte wähle ein Team</div>}
-
-
-
+        <Content team={team} /> : <div className="m-10 bg-backgroundContent w-contentWidth font-Quicksand text-white">Bitte wähle ein Team</div>}
     </div>
   );
 }
