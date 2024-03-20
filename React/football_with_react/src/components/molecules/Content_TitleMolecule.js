@@ -4,10 +4,9 @@ import TeamName from '../atoms/Content_TeamNameAtom.js'
 
 export default function TitleMolecules({ team }) {
   return (
-    <div>
-      TitleMolecule
+    <div className="m-10 w-64">
       <Picture image={team.teamIconUrl} />
-      <TeamName />
+      <TeamName name={team.teamName} />
     </div>
   )
 }
