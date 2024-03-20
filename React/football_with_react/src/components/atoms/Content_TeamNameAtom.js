@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Content_TeamNameAtom() {
+export default function Content_TeamNameAtom({ name }) {
   return (
-    <div>Content_TeamNameAtom</div>
+    <div>
+      <h1 className="text-5xl">{name}</h1>
+    </div>
   )
 }
