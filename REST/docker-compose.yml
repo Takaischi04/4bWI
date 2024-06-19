@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:8.3.0 # Aktuelle Version
+    container_name: mysql-db
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "mySecret"
+      MYSQL_DATABASE: "htld"
+
+volumes:
+  mysql_data:
